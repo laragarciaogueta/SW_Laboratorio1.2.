@@ -6,7 +6,7 @@ export class Extraterrestre extends Jugador{
         super(nombre, fuerza, 150);
     }
    
-    getNombre(){
+    get miNombre(){
         return this.nombre.split("").reverse().join("");
     }
 }
