@@ -1,9 +1,7 @@
 import {Jugador} from "./jugador.js" 
 export class Humano extends Jugador{
     constructor(miNombre){
-        super(salud) = 150
-        super(fuerza) = 70
-        super(this.miNombre) = "h" + this.miNombre
+        super("h" + miNombre, 70, 150);
     }
 
     getNombre(){

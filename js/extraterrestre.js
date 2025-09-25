@@ -1,9 +1,8 @@
 import {Jugador} from "./jugador.js" 
 export class Extraterrestre extends Jugador{
     constructor(miNombre){
-        super(salud) = 150
-        super(fuerza) = Math.floor(Math.random()*100 )+ 1
-        super(this.miNombre) = "e" + this.miNombre
+        const fuerza = Math.floor(Math.random() * 100) + 1; // 1-100
+        super("e" + miNombre, fuerza, 150);
     }
    
     getNombre(){
