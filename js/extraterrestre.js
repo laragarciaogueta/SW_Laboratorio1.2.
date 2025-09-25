@@ -1,7 +1,5 @@
-export {Extraterrestre}
-import { resolvePreset } from "@babel/core"
 import {Jugador} from "./jugador.js" 
-class Extraterrestre extends Jugador{
+export class Extraterrestre extends Jugador{
     constructor(miNombre){
         super(salud) = 150
         super(fuerza) = Math.floor(Math.random()*100 )+ 1

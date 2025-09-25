@@ -1,6 +1,5 @@
-export {Humano}
 import {Jugador} from "./jugador.js" 
-class Humano extends Jugador{
+export class Humano extends Jugador{
     constructor(miNombre){
         super(salud) = 150
         super(fuerza) = 70

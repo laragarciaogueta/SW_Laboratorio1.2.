@@ -1,5 +1,4 @@
-export {Jugador}
-class Jugador{
+export class Jugador{
     //constructora
     constructor(miNombre, fuerza, salud){
         this.miNombre = miNombre
