@@ -3,7 +3,7 @@ import {Maquina} from "./maquina.js"
 import {Humano} from "./humano.js" 
 import {Extraterrestre} from "./extraterrestre.js" 
 
-// The Fisher-Yates algorithm for shuffling an array
+
 const shuffleArray = array => {
     for (let i = array.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
