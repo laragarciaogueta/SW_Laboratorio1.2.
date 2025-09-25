@@ -17,9 +17,9 @@ const shuffleArray = array => {
 let campo = []
 for(i=0; i<50; i++){
     //creamos
-    let maquina = new Maquina(i);
-    let extraterrestre = new Extraterrestre(i);
-    let humano = new Humano(i);
+    let maquina = new Maquina("m"+i);
+    let extraterrestre = new Extraterrestre("e"+i);
+    let humano = new Humano("h"+i);
     //guardamos
     campo.push(maquina);
     campo.push(extraterrestre);
