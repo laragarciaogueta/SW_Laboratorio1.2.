@@ -5,8 +5,8 @@ test('debería inicializar correctamente Extraterrestre y devolver el nombre inv
   const extraterrestre = new Extraterrestre('John');
 
   // miNombre se guarda tal cual, pero el getter nombre lo devuelve invertido
-  expect(extraterrestre.miNombre).toBe('John');
-  expect(extraterrestre.nombre).toBe('nhoJ');
+  expect(extraterrestre.nombre).toBe('John');
+  expect(extraterrestre.miNombre).toBe('nhoJ');
 
   // Rangos y salud según el enunciado
   expect(extraterrestre.fuerza).toBeGreaterThanOrEqual(1);
