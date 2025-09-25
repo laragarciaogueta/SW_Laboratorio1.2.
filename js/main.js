@@ -16,11 +16,18 @@ const shuffleArray = array => {
 // Inicializar un único array con 50 maquinas, 50 humanos y 50 extraterrestres
 let campo = []
 for(i=0; i<50; i++){
-    let maquina = 
+    //creamos
+    let maquina = new Maquina(i);
+    let extraterrestre = new Extraterrestre(i);
+    let humano = new Humano(i);
+    //guardamos
+    campo.push(maquina);
+    campo.push(extraterrestre);
+    campo.push(humano);
 }
 
 // Ordenar los elementos del array al azar
-
+shuffleArray(campo);
 
 // Imprimir el campo
 console.log(campo)
