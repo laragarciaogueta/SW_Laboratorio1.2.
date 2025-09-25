@@ -35,12 +35,20 @@ console.log(campo)
 let turno =1
 
 // Mientras quede mas de un jugador en el array pelear por parejas
-// while....
+while (campo.length > 1){
     console.log(`Turno: ${turno}`)
-    // Pelear por parejas. Si los elementos que quedan en el array son impares, el último no pelea
-    // eliminar los que se quedan fuera
-    // ordernar
-    turno++
+    for(let i = 0; i<campo.lenght-1; i+2){
+        campo[i].luchar(campo[i+1]);
 
+        //eliminamos los que se mueren
+        if(campo[i].salud <= 0){
+            campo.splice(i,1);
+        }
+        if(campo[i+1].salud <=0){
+            campo.splice(i+1, 1);
+        }
+    }
+    turno++
+}
 // Imprimir campeón. Unico elemento que queda en el array
 console.log("Campeón: " + campo[0].nombre) 
