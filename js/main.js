@@ -1,5 +1,7 @@
 // Importar clases
-
+import {Maquina} from "./maquina.js" 
+import {Humano} from "./humano.js" 
+import {Extraterrestre} from "./extraterrestre.js" 
 
 // The Fisher-Yates algorithm for shuffling an array
 const shuffleArray = array => {
@@ -13,6 +15,9 @@ const shuffleArray = array => {
 
 // Inicializar un único array con 50 maquinas, 50 humanos y 50 extraterrestres
 let campo = []
+for(i=0; i<50; i++){
+    let maquina = 
+}
 
 // Ordenar los elementos del array al azar
 
