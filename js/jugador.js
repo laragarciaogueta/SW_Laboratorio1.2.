@@ -1,14 +1,14 @@
 export class Jugador{
     //constructora
-    constructor(miNombre, fuerza, salud){
-        this.miNombre = miNombre
+    constructor(nombre, fuerza, salud){
+        this.nombre = nombre
         this.fuerza = fuerza
         this.salud = salud
     }
     
     //metodo getNombre()
     getNombre(){
-        return this.miNombre
+        return this.nombre
     }
 
     //método luchar(jugador)

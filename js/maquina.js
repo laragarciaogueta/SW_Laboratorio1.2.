@@ -1,9 +1,9 @@
 
 import {Jugador} from "./jugador.js" 
 export class Maquina extends Jugador{
-    constructor(miNombre){
+    constructor(nombre){
         const fuerza  = Math.floor(Math.random()*85) + 1
-        super(miNombre, fuerza, 130);
+        super(nombre, fuerza, 130);
     }
 
 }
