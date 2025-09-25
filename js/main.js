@@ -37,8 +37,10 @@ let turno =1
 // Mientras quede mas de un jugador en el array pelear por parejas
 while (campo.length > 1){
     console.log(`Turno: ${turno}`)
-    for(let i = 0; i<campo.lenght-1; i+2){
-        campo[i].luchar(campo[i+1]);
+
+    for(let i = 0; i<campo.length-1; i+=2){
+        console.log(`Batalla: ${campo[i].getNombre()} vs ${campo[i + 1].getNombre()}`);
+        [i].luchar(campo[i+1]);
 
         //eliminamos los que se mueren
         if(campo[i].salud <= 0){
@@ -47,6 +49,11 @@ while (campo.length > 1){
         if(campo[i+1].salud <=0){
             campo.splice(i+1, 1);
         }
+    }
+
+    // Si hay un jugador sin pareja, lo dejamos pasar a la siguiente ronda
+    if (campo.length % 2 !== 0) {
+        nuevos.push(campo[campo.length - 1]);
     }
     turno++
 }
