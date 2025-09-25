@@ -1,4 +1,5 @@
-import {Jugador} from "./jugador.js" 
+import {Jugador} from "./jugador.js"
+
 export class Extraterrestre extends Jugador{
     constructor(miNombre){
         const fuerza = Math.floor(Math.random() * 100) + 1; // 1-100
@@ -6,6 +7,6 @@ export class Extraterrestre extends Jugador{
     }
    
     getNombre(){
-        return this.miNombre.reverse();
+        return this.miNombre.split("").reverse().join("");
     }
 }
